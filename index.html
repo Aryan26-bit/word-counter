@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="left-wrapper">
+        <h2 class="watermark">Word</h2>
+        <h2 class="watermark">Meaning</h2>
+        <h2 class="watermark">Counter</h2>
+      </div>
+      <div class="main-form">
+        <div class="inner-form">
+          <h1>Enter text here:</h1>
+          <div class="prop-res-wrapper">
+            <textarea
+              name="textInput"
+              id="input-text"
+              cols="30"
+              rows="10"
+              spellcheck="false"
+              autofocus
+            ></textarea>
+            <p class="status-bar">
+              Words: <span id="word-count">0</span> | Characters:
+              <span id="character-count">0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  <!----  <p class="github-link">
+      Checkout my
+    <a
+        href="https://github.com/edumigueis"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      
+    </p>-->
+    <script src="./js/word-counter.js"></script>
+    <script src="./js/load-animations.js"></script>
+  </body>
+</html>

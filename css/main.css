@@ -1,0 +1,170 @@
+/*Copyright (c) Eduardo Migueis 2020.*/
+@font-face {
+  src: url("../fonts/Helvetica Neue Medium.otf");
+  font-family: "Helvetica Neue Medium";
+}
+
+body {
+  background-color: #fbfbfb;
+  font-family: "Helvetica Neue Medium";
+  color: #191919;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main-form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 60%;
+  flex: 60%;
+}
+
+.main-form .inner-form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 1300px;
+}
+
+.main-form .inner-form h1 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-form .inner-form h1 {
+    margin-left: 20px;
+  }
+}
+
+.main-form .inner-form .prop-res-wrapper {
+  min-width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-form .inner-form .prop-res-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-form .inner-form .prop-res-wrapper {
+    max-width: 99vw;
+    min-width: 0;
+  }
+}
+
+.main-form .inner-form .prop-res-wrapper .status-bar {
+  margin-top: 9px;
+  width: 100%;
+  -webkit-box-flex: 100%;
+  flex: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .main-form .inner-form .prop-res-wrapper .status-bar {
+    margin-left: 20px;
+  }
+}
+
+#input-text {
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 19px;
+  max-height: 70vh;
+  max-width: 50vw;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+@media screen and (min-width: 1600px) {
+  #input-text {
+    max-width: 900px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #input-text {
+    -webkit-box-flex: 100%;
+    flex: 100%;
+    width: 100%;
+    margin: 0 20px;
+    max-width: 99vw;
+  }
+}
+
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.wrapper .left-wrapper {
+  -webkit-box-flex: 40%;
+  flex: 40%;
+  background: #fc789f;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper .left-wrapper {
+    display: none;
+  }
+}
+
+.wrapper .left-wrapper .watermark {
+  font-size: 15rem;
+  position: relative;
+  color: #d36485;
+}
+
+.wrapper .left-wrapper .watermark:nth-child(1) {
+  margin-left: -30px;
+  letter-spacing: 0.4rem;
+}
+
+.wrapper .left-wrapper .watermark:nth-child(2) {
+  margin-left: -300px;
+}
+
+.github-link {
+  position: fixed;
+  z-index: 3;
+  top: 14px;
+  right: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.github-link a {
+  color: #422adb;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
